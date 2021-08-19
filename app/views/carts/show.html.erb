@@ -4,8 +4,10 @@
     <h1>My Cart</h1>
   </header>
 <% if !enhanced_cart.any? %>
-<h1>Cart is Empty</h1>
-<a href="/">home</a>
+<h3>Cart is Empty</h3>
+<button type= "button">
+<a href="/">back to products</a>
+</button>
 <% else %>
   <div class="panel panel-default items">
     <table class="table table-bordered">
@@ -41,7 +43,7 @@
         <script
           src="https://checkout.stripe.com/checkout.js" class="stripe-button"
           data-key="<%= Rails.configuration.stripe[:publishable_key] %>"
-          data-amount="<%= humanized_money_with_symbol cart_subtotal_cents %>"
+          data-amount="<%= cart_subtotal_cents %>"
           data-name="Jungle"
           data-description="Khurram Virani's Jungle Order"
           data-locale="auto"
