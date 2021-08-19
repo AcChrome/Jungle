@@ -4,10 +4,8 @@
     <h1>My Cart</h1>
   </header>
 <% if !enhanced_cart.any? %>
-<h3>Cart is Empty</h3>
-<button type= "button">
-<a href="/">back to products</a>
-</button>
+<h3>Your cart is Empty</h3>
+<%= link_to "Back to products", root_path, class: 'btn btn-lg btn-primary' %>
 <% else %>
   <div class="panel panel-default items">
     <table class="table table-bordered">
