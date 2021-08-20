@@ -13,15 +13,16 @@
     <table class="table table-bordered">
       <thead>
         <tr>
-          <th colspan="2">Category</th>
+          <th style="padding-right: 40em;">Category</th>
+          <th>Number of Products</th>
         </tr> 
       </thead>
 
       <tbody>
         <% @categories.each do |category| %>
           <tr>
-            <td><%= link_to category.name, category %><td>
-            
+            <td><%= link_to category.name, category %></td>
+            <td><%= get_products_count category %></td>
           </tr>
         <% end %>
       </tbody>

@@ -19,6 +19,12 @@ class Admin::CategoriesController < ApplicationController
     end
   end
 
+  def get_products_count(category)
+    Product.where('category_id' => category.id).count 
+  end
+  helper_method :get_products_count
+  
+
   private
 
   def category_params
