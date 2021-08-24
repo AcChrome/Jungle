@@ -69,5 +69,35 @@ RSpec.describe User, type: :model do
     end
   end
 
+  describe '.authenticate_with_credentials' do
+    it 'should authenticate the user with all the correct credentials and log in' do
+    @user.save
+    expect(User.authenticate_with_credentials(@user.email, @user.password)).to eq(@user)
+    end
+
+    it 'should authenticate the user with incorrect email and refuse log in' do
+      @user.save
+      expect(User.authenticate_with_credentials('g@gmail.com', @user.password)).to eq(nil)
+    end
+
+    it 'should authenticate the user with incorrect password and refuse log in' do
+      @user.save
+      expect(User.authenticate_with_credentials(@user.email, '123456')).to eq(nil)
+    end
+
+    it 'should authenticate the user with all the correct credentials even with white spaces and log in' do
+      @user.email = '   giselle@gmail.com   '
+      @user.save
+      expect(User.authenticate_with_credentials(@user.email, @user.password)).to eq(@user)
+    end
+
+    it 'should authenticate the user with all the correct credentials without case sensitivity and log in' do
+      @user.email = 'gISELLe@gmail.CoM'
+      @user.save
+      expect(User.authenticate_with_credentials(@user.email, @user.password)).to eq(@user)
+    end
+
+
   
+  end
 end
