@@ -88,6 +88,7 @@ RSpec.describe User, type: :model do
     it 'should authenticate the user with all the correct credentials even with white spaces and log in' do
       @user.email = '   giselle@gmail.com   '
       @user.save
+      puts @user.inspect
       expect(User.authenticate_with_credentials(@user.email, @user.password)).to eq(@user)
     end
 
