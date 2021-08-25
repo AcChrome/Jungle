@@ -45,7 +45,7 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 ## Screenshots
 
 # Homepage
-![homepage][https://github.com/AcChrome/jungle-rails/blob/master/docs/homepage.jpg?raw=true]
+![homepage](https://github.com/AcChrome/jungle-rails/blob/master/docs/homepage.jpg?raw=true)
 
 # Cart
-![cart][https://github.com/AcChrome/jungle-rails/blob/master/docs/cart.jpg?raw=true]
+![cart](https://github.com/AcChrome/jungle-rails/blob/master/docs/cart.jpg?raw=true)
