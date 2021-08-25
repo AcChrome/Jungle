@@ -44,8 +44,17 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 
 ## Screenshots
 
-# Homepage
-![homepage](https://github.com/AcChrome/jungle-rails/blob/master/docs/homepage.jpg?raw=true)
+### Homepage
+![homepage](https://github.com/AcChrome/jungle-rails/blob/master/docs/homepage.jpg)
 
-# Cart
-![cart](https://github.com/AcChrome/jungle-rails/blob/master/docs/cart.jpg?raw=true)
+### Cart
+![cart](https://github.com/AcChrome/jungle-rails/blob/master/docs/cart.jpg)
+
+### Signup
+![signup](https://github.com/AcChrome/jungle-rails/blob/master/docs/signup.jpg)
+
+### Login
+![login](https://github.com/AcChrome/jungle-rails/blob/master/docs/login.jpg)
+
+### Admin Dashboard
+![admindashboard](https://github.com/AcChrome/jungle-rails/blob/master/docs/admindashboard.jpg?raw=true)
