@@ -43,3 +43,6 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 * Stripe
 
 ## Screenshots
+
+# Homepage
+!(homepage)[https://github.com/AcChrome/jungle-rails/blob/master/docs/homepage.jpg?raw=true]
