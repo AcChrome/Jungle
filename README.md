@@ -57,4 +57,11 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 ![login](https://github.com/AcChrome/jungle-rails/blob/master/docs/login.jpg)
 
 ### Admin Dashboard
-![admindashboard](https://github.com/AcChrome/jungle-rails/blob/master/docs/admindashboard.jpg?raw=true)
+![admindashboard](https://github.com/AcChrome/jungle-rails/blob/master/docs/admindashboard.jpg)
+
+### Admin Products
+![adminproducts](https://github.com/AcChrome/jungle-rails/blob/master/docs/adminproducts.jpg)
+
+### Admin Categories
+
+![admincategories](https://github.com/AcChrome/jungle-rails/blob/master/docs/admincategory.jpg)
